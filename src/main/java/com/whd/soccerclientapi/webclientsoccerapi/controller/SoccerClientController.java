@@ -38,18 +38,7 @@ public class SoccerClientController {
 
         return "I'm alive!!!";
     }
-/*
-    @GetMapping("/reactor")
-    public Mono<String> imAliveReactor(){
-        try {
-            Thread.sleep(10000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
 
-        return Mono.just("I'm alive!!! com react modafocka");
-    }
-*/
 
     @GetMapping("/countries")
     public CountryListPojo getCountries(){
