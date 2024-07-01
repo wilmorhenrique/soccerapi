@@ -29,9 +29,9 @@ public class SoccerClientController {
     TheSportsDBAPIClientService apiClient;
     @GetMapping
     public String imAlive(){
-        log.info("entrei e vai esperar 10 Segundos");
+        log.info("entrei e vai esperar 1 Segundo");
             try {
-                Thread.sleep(10000);
+                Thread.sleep(1000);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
